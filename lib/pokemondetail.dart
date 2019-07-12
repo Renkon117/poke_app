@@ -68,7 +68,7 @@ class PokeDetail extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: pokemon.nextEvolution == null
-                        ? pokemon.nextEvolution
+                        ? [Container()]
                         : pokemon.nextEvolution
                             .map((n) => FilterChip(
                                   backgroundColor: Colors.green,
